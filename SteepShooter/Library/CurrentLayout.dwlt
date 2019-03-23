@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 10
+    x: 0
     y: 45
     width: 1440
     height: 783
@@ -291,7 +291,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 227
+    x: 217
     y: 75
     width: 888
     height: 439
@@ -332,13 +332,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.23718202, y: 0.75798136, z: -0.37772408, w: -0.47595543}
+    m_Target: {x: -0.20101093, y: 0.5800769, z: -0.15047453, w: -0.77489537}
     speed: 2
-    m_Value: {x: -0.23718202, y: 0.75798136, z: -0.37772408, w: -0.47595543}
+    m_Value: {x: -0.20101093, y: 0.5800769, z: -0.15047453, w: -0.77489537}
   m_Size:
-    m_Target: 43.54131
+    m_Target: 13.778675
     speed: 2
-    m_Value: 43.54131
+    m_Value: 13.778675
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 10
+    x: 0
     y: 75
     width: 215
     height: 439
@@ -379,9 +379,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce0b0000
-      m_LastClickedID: 3022
-      m_ExpandedIDs: d4fbffffd80b0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -426,7 +426,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 227
+    x: 217
     y: 75
     width: 888
     height: 439
@@ -506,7 +506,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 10
+    x: 0
     y: 534
     width: 1107
     height: 254
@@ -666,7 +666,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1119
+    x: 1109
     y: 75
     width: 329
     height: 713
