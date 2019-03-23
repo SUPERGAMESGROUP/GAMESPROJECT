@@ -9,6 +9,9 @@ public class Shoot : MonoBehaviour
     void Start()
     {
         _camera = GetComponent<Camera>();//Доступ к компонентам
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false; //скрываем указатель мыши
+
     }
 
     // Update is called once per frame
@@ -22,7 +25,26 @@ public class Shoot : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {//луч заполняет информацией переменную
                 Debug.Log("Hit " + hit.point);//загружаем координаты точки, в которую луч попал
+                StartCoroutine(SphereIndicator(hit.point));//Запуск сопрограммы в ответ на попадание
             }
         }
     }
+
+    private IEnumerator SphereIndicator(Vector3 pos)
+    {//Сопрограмма использует функцию IEnumerator
+        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere); //говорим переменной sphere,что это примитив сфера
+        sphere.transform.position = pos; //перемещаем в позицию попадания, где храниться в переменной pos
+        yield return new WaitForSeconds(1);//слово yield указывает когда остановиться
+        Destroy(sphere);//удаляем gameObject
+    }
+
+
+    void OnGUI()
+    {
+
+        float posX = _camera.pixelWidth / 2;
+        float posY = _camera.pixelHeight / 2;
+        GUI.Label(new Rect(posX, posY, 12, 12), "*");//команда GUI.Label() отображает символ *
+    }
+
 }
