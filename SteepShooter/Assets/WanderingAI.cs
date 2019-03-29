@@ -8,6 +8,9 @@ public class WanderingAI : MonoBehaviour //скрипт для искусств�
     public float obstacleRange = 5.0f;
     private bool _alive;//булевая переменная для слежения за жизнью врага
 
+    public GameObject fireballPrefab;//будем хранить префаб
+    private GameObject _fireball;
+
     // Use this for initialization
     void Start()
     {
