@@ -25,10 +25,4 @@ public class MemoryCard : MonoBehaviour {
             cardBack.SetActive(false); //Делаем объект видимым/невидимым
         }
     }
-
-    public void Unreveal()
-    { //позволяет вернуть открытую карты на место
-        cardBack.SetActive(true);
-    }
-
 }
